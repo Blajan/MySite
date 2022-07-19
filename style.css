@@ -1,0 +1,645 @@
+
+      /* Home */
+      body {margin: 0px; font-family: 'Aleo'}
+      .first_page {
+         position: relative; 
+         width: 100%;
+         height: 98vh;
+      }
+      .nav {
+         width: 100%;
+         padding: 18px 15px ;
+         background-color: rgb(255, 255, 255, 0.5);
+         position: absolute; color: #181818; 
+         text-align: center;
+         box-shadow: 5px 5px 5px rgb(255, 255, 255, 0.5);
+      }
+      .nav a {
+         color: #181818; 
+         padding: 0px 15px;
+         font-size: 25px; 
+         text-decoration: none;
+         cursor: pointer;
+      }
+      .nav h1 {
+         display: inline-block;
+         font-size: 38px;
+         font-family: 'Sofia'; 
+         margin: 0px 40px;
+      }
+      .nav a:hover {
+         color: #fff;
+         padding: 10px;
+         background-color: #585858;
+         border-radius: 30px;
+      }
+
+      #image_profile {
+         width: 500px;
+         height: 550px; 
+         position: absolute;
+         top: 57%;
+         left: 25%; 
+         transform: translate(-50%, -50%);
+         border-radius: 50%;
+         }
+      #image_background {
+         height: 100vh; 
+         width: 100%;
+      }
+      .dark {
+         background-color: rgba(0, 0, 0, 0.5);
+         position: absolute;
+         height: 100%;
+         width: 100%;
+      }
+      .bg_animation {
+         background-color: rgba(0, 0, 0, 0.5);
+         box-shadow: 3px 1px 3px #fff;
+         border: 3px solid #fff;
+         width: 650px;
+         height: 50%;
+         position: absolute;
+         left: 50%;
+         top: 82px;
+         animation-name: bg_down;
+         animation-duration: 3s;
+         animation-fill-mode: forwards;
+      }
+      .text_animation {
+         background-color: none;
+         position: absolute;
+         width: 650px;
+         height: 50%;
+         left: 50%;
+         bottom: 0px;
+         color: #fff;
+         animation-name: text_up;
+         animation-duration: 3s;
+         animation-fill-mode: forwards;
+         font-size: 22px;
+      }
+      .text_animation h4 {margin: 10px 40px;}
+      .text_animation h3 {font-size: 25px; margin: 0 0 20px 0; text-align: center;}
+
+      @keyframes text_up {
+         from {bottom: 0px; opacity: 0;}
+         to {bottom: 115px; opacity: 1;}
+      }
+
+      @keyframes bg_down {
+         from {top: 82px; opacity: 0;}
+         to {top: 225px; opacity: 1;}
+      }
+ 
+
+      @media (min-width: 900px) and (max-width: 1300px) {
+         .first_page {
+            height: 80vh;
+         }
+         .nav a {font-size: 26px;}
+         .text_animation h4 {font-size: 27px;}
+         .bg_animation {
+            width: 45%;
+            height: 48%;
+         }
+         #image_profile {
+            left: 25%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 450px;
+         }
+         #image_background {
+            height: 80vh;
+         }
+         .text_animation {
+            width: 45%;
+            height: 30%;
+         }
+         @keyframes bg_down  {
+            from {top: 82px; opacity: 0;}
+            to {top: 400px; opacity: 1;}
+         }
+         @keyframes text_up {
+            from {bottom: 0px; opacity: 0;}
+            to {bottom: 650px; opacity: 1;}
+         }
+         .nav {
+            width: 100%;
+         }
+      }
+
+      @media (min-width: 500px) and (max-width: 900px) {
+         .nav a {font-size: 19px; padding: 3px 8px}
+         .nav {padding: 8px 8px}
+         .text_animation h4 {font-size: 14px}
+         #image_profile {
+            width: 270px;
+            height: 270px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+         }
+         .text_animation {
+            width: 80%;
+         }
+         .bg_animation {
+            width: 80%;
+            height: 33%;
+         }
+         @keyframes text_up {
+            from {bottom: -140px; left: 10%; opacity: 0;}
+            to {bottom: -120px; left: 10%; opacity: 1;}
+         }
+         @keyframes bg_down  {
+            from {top: 300px; left: 10%; opacity: 0;}
+            to {top: 475px; left: 10%; opacity: 1;}
+         }
+
+      }
+
+      @media (max-width: 500px) {
+         .nav a {font-size: 17px; padding: 10px 5px}
+         .nav h1 {font-size: 35px}
+         .nav {padding: 7px 0px}
+         .text_animation h4 {font-size: 13px}
+         #image_profile {
+            width: 270px;
+            height: 270px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+         }
+         .text_animation {
+            width: 80%;
+         }
+         .bg_animation {
+            width: 80%;
+            height: 34%;
+         }
+         @keyframes text_up {
+            from {bottom: -140px; left: 10%; opacity: 0;}
+            to {bottom: -80px; left: 10%; opacity: 1;}
+         }
+         @keyframes bg_down  {
+            from {top: 300px; left: 10%; opacity: 0;}
+            to {top: 475px; left: 10%; opacity: 1;}
+         }
+      }
+      /* Home */
+
+
+      /* About me */
+      .bg_about_me {
+         width: 100%;
+         height: 98vh;
+         position: relative;
+      }
+      .text_about_me {
+         width: 40%; 
+         height: 80%; 
+         background-color: rgba(0, 0, 0, 0.8); 
+         border: 6px solid #00284d;
+         position: absolute;
+         color: #fff; 
+         margin-left: 50%; 
+         margin-top: 5%;
+         transform: scale(.1);
+         transition: 1s ease-in-out;
+      }
+      #me {
+         width:30%; 
+         height:70%;
+         position: absolute; 
+         border: 5px solid #ffff00; 
+         margin: 7.5% 10%;
+      }
+      .text_about_me h4 {margin: 40px 40px; font-size: 20px;}
+      .text_about_me h2 {text-align: center; font-size: 32px;}
+
+      @media (min-width: 1100px) and (max-width: 1300px) {
+         .text_about_me {
+            width: 40%;
+            margin-left: 50%;
+            top: 2.5%;
+         }
+         .text_about_me h4 {font-size: 18px;}
+         }
+      @media (min-width: 650px) and (max-width: 1100px) {
+         .bg_about_me {
+            height: 70vh;
+         }
+         #me {
+            top: 7%;
+            width: 50%;
+            margin-left: 0;
+         }
+         .text_about_me {
+            height: 40%;
+            width: 50%;
+            margin-top: 37%;
+            left: 0;
+         }
+         .text_about_me h4 {font-size: 20px;}
+         .text_about_me h2 {font-size: 20px;}
+      }
+      @media (max-width: 650px) {
+         .text_about_me h4 {font-size: 13px;}
+         .text_about_me h2 {font-size: 20px;}
+         .text_about_me {
+            width: 90%;
+            height: 60%;
+            margin-left: 5%;
+            top: 30%;
+         }
+         #me {
+            width: 80%;
+            height: 25%;
+            margin-left: 10%;
+         }
+      }
+      /* About me */
+
+
+      /* Carousel */
+      .mySlides {display: none}
+      img {vertical-align: middle}
+      .slideshow-container {
+         max-width: 100%;
+         height: 100vh;
+         position: relative; 
+         margin: auto;
+      }
+      .text h4 {
+         background-color: rgba(0, 0, 0, 0.7); 
+         position: absolute; 
+         top: 50%; 
+         padding: 80px 0px; 
+         width: 100%;
+         color: #fff; 
+         transform: translate( 0%, -50%); 
+         text-align: center; 
+         font-size: 22px;
+      }
+      .fade {
+         animation-name: fade; 
+         animation-duration: 2s}
+      @keyframes fade {
+         from {opacity: .3} 
+         to {opacity: 1}
+      }
+      @media (min-width: 900px) and (max-width: 1200px) {
+         .slideshow-container {
+            height: 85vh;
+         }
+         .text h4 {
+            font-size: 30px;
+         }
+     }
+      @media (min-width: 500px) and (max-width: 900px) {
+         .text h4 {font-size: 17px;}
+      }
+      @media (max-width: 500px) {
+         .text h4 {font-size: 14px;}
+      }
+      /* Carousel */
+
+
+      /* My project */
+      .bg_color {
+         height: 100vh; 
+         width: 100%; 
+         background-image: linear-gradient( to right,rgb(234, 223, 8), rgb(219, 192, 255) , rgb(180, 192, 255, 0.7));
+         position: relative;
+      }
+      .bg_color_half {
+         height: 50%; 
+         width: 100%; 
+         background-color: #1e1e1e; 
+         border: 3.5px solid #1e1e1e; 
+         position: absolute; 
+         border-radius:0 0 50px 50px;
+      }
+      .box_project {
+         height: 65%; 
+         background-color: #fff; 
+         position: absolute;
+         width: 25%; 
+         border-radius: 50px;
+         font-size: 20px;
+      }
+      .first_project img {width:100%; height:55%; border-radius: 50px 50px 0px 0px;}
+      .second_project img {width:100%; height:55%; border-radius: 50px 50px 0px 0px;}
+      .first_project {margin: 7.5% 20%; }
+      .second_project {margin: 7.5% 55%;}
+      .box_project:hover {
+         background-color: rgba(0, 0, 0, 0.4); 
+         color: #fff;
+      }
+      .box_project h2 {
+         top: 70%; 
+         text-align: center;
+      }
+      .box_project h4 {margin: 0px 40px}
+      .box_project_bar {
+         height: 2%; 
+         width: 100%; 
+         background-color: #1e1e1e; 
+         top: 53%; 
+         position: absolute;
+      }
+      @media (min-width: 800px) and (max-width: 1250px)  {
+         .bg_color {
+             height: 80vh;
+         }
+          .first_project {
+            margin: 28% 5%;
+         }
+          .second_project {
+            margin: 28% 50%;
+         }
+          .box_project {
+            height: 60%;
+            width: 45%; 
+            font-size: 18px;
+         }
+      }
+      @media (min-width: 500px) and (max-width: 800px)  {
+         .first_project {
+            margin: 19.5% 50%; 
+            width: 45%;
+         }
+         .second_project {
+            margin: 19.5% 5%; 
+            width: 45%;
+         }
+         .box_project h4 {
+            margin: 0px 20px; 
+            font-size: 15px;
+         }
+         .box_project h2 {font-size: 20px;}
+      }
+      @media (max-width: 500px)  {
+         .first_project {
+            margin: 19% 11.5%; 
+            width: 45%;
+         }
+         .second_project {
+            margin: 125% 11.5%; 
+            width: 45%;
+         }
+         .box_project {
+            width: 75%; 
+            height: 32%; 
+            font-size: 12px;
+         }
+      }
+      /* My project */ 
+
+
+      /* Why_me */
+      .why_me {
+         position: relative;
+         width: 100%;
+         height: 100vh;
+         background-color: #fff;
+      }
+      .triangleright {
+         border-top: 210px solid transparent;
+         border-bottom: 210px solid transparent;
+         border-left: 480px solid rgb(180, 192, 255, 0.7);
+         margin: 160px 350px;
+         position: absolute;
+      }
+      .lemon {
+         width: 250px;
+         height: 250px;
+         background-color: none;
+         border: 5px solid rgb(241, 241, 8);
+         bottom: 100px;
+         right: 200px;
+         border-radius: 150px 0px 150px 0px;
+         position: absolute;
+      }
+      .half_circle {
+         position: absolute;
+           width: 200px; 
+           height: 100px; 
+           background-color: rgb(219, 192, 255); 
+           margin: 0px 200px;
+           border-bottom-left-radius: 230px; 
+           border-bottom-right-radius: 230px;
+        }  
+        .model_1 {
+         width: 200px;
+         height: 200px;
+         border: 8px solid rgb(180, 192, 255);
+         border-right: none;
+         border-radius: 100px 100px 100px 100px;
+         margin-left: 65%;
+         margin-top: 20%;
+         position: absolute;
+        }
+        .model_2 {
+         width: 200px;
+         height: 100px;
+         border: 8px solid #181818;
+         border-top: none;
+         border-radius: 0px 0px 150px 150px;
+         margin-left: 70%;
+         position: absolute;
+        }
+        .bg_why {
+         height: 100%; 
+         background-color: none; 
+         width: 75%; 
+         margin: 0 13%; 
+         position: absolute;
+      }
+        .bg_why h2 {
+         text-align: center; 
+         margin-top: 50px ;
+         font-size: 40px;
+      }
+        .bg_why h4 {
+         margin: 80px 130px 0 130px; 
+         font-size: 22px;
+         letter-spacing: 5px 5px;
+      }
+      @media (min-width: 800px) and (max-width: 1250px)  {
+         .why_me {
+            height: 70vh;
+         }
+         .bg_why h4 { 
+            margin: 80px 30px 0 30px; 
+            font-size: 26px;
+         }
+         .bg_why h2 {
+            font-size: 30px;
+         }
+         .triangleright {margin: 160px 250px;}
+         .half_circle {margin-left: 70px;}
+         .lemon {left: 350px; bottom: 200px;}
+         .model_1 {margin-left: 60%;}
+         .model_2 {display: none;}
+      }
+      @media (min-width: 500px) and (max-width: 800px)  {
+         .bg_why h4 { 
+            margin: 80px 30px 0 30px; 
+            font-size: 14px;
+         }
+         .bg_why h2 {
+            font-size: 30px;
+         }
+         .triangleright {
+            margin: 160px 50px; 
+            border-left: 360px solid rgb(180, 192, 255, 0.7);
+         }
+         .half_circle {margin-left: 70px;}
+         .lemon {
+            left: 150px; 
+            bottom: 50px;
+         }
+         .model_1 {margin-left: 50%;}
+         .model_2 {display: none;}
+      }
+      @media (max-width: 500px) {
+         .bg_why h4 { 
+            margin: 60px 10px; 
+            font-size: 13px; 
+         }
+         .bg_why h2 {
+            font-size: 20px;
+         }
+         .triangleright {
+            margin: 160px 50px; 
+            border-left: 300px solid rgb(180, 192, 255, 0.7);
+         }
+         .half_circle {margin-left: 70px;}
+         .lemon {
+            left: 15%; 
+            bottom: 10px;
+         }
+         .model_1 {margin-left: 50%;}
+         .model_2 {display: none;}
+      }
+      /* Why_me */
+
+
+      /* Feedback */
+      .bg_feedback {
+         width: 100%;
+         height: 100vh;
+         position: relative;
+      }
+      .box_feedback {
+         width: 25%;
+         height: 50%;
+         font-size: 22px;
+         background-color: rgba(0, 0, 0, 0.5);
+         border-top: 4px solid #fff;
+         border-bottom: 4px solid #fff;
+         position: absolute;
+         color: #fff;
+      }
+      .box_feedback h2 {text-align: center;}
+      .box_feedback h4 {margin: 10px 20px;}
+      .first {margin: 12% 8%;}
+      .second {margin: 9.5% 38%; height: 60%;}
+      .third {margin: 12% 68%;}
+      @media (min-width: 1000px) and (max-width: 1300px) {
+         .box_feedback h4 {font-size: 17px}
+         .box_feedback h2 {font-size: 25px}
+      }
+      @media (min-width: 750px) and (max-width: 1000px) {
+         .bg_feedback {
+           height: 70vh;
+         }
+         .box_feedback {
+           width: 60%;
+           height: 22%;
+           font-size: 24px;
+         }
+         .first {margin: 9% 18%;}
+         .second {margin: 51% 18%;}
+         .third {margin: 93% 18%}
+      }
+      @media (min-width: 550px) and (max-width: 750px) {
+         .box_feedback {
+            width: 80%;
+            height: 23%;
+            font-size: 13px;
+         }
+         .first {margin: 3% 9%;}
+         .second {margin: 39% 9%;}
+         .third {margin: 77% 9%}
+      }
+      @media (max-width: 550px) {
+         .box_feedback {
+            width: 80%;
+            height: 23%;
+            font-size: 11px;
+         }
+         .first {margin: 3% 9%;}
+         .second {margin: 56% 9%;}
+         .third {margin: 110% 9%}
+      }
+      /* Feedback */
+
+
+      /* Footer */
+      .bg_footer {
+         width: 100%;
+         height: 40vh;
+         background-color: #1e1e1e;
+         position: relative;
+      }
+      .circle_icon {
+         width: 70px;
+         height: 70px;
+         border: 4px solid #fff;
+         background-color: #1e1e1e;
+         position: absolute;
+         border-radius: 50%;
+         font-size: 40px;
+         top: 42%;
+      }
+      .bg_footer h2 {position: absolute; color: #fff; font-size: 23px; margin: 3% 21%}
+      .bg_footer a {color: #fff; text-decoration: none}
+
+      .twitter {background-color: #1DA1F2}
+      .instagram {background-color: #C13584}
+      .linkedin {background-color: #4267B2}
+      .github {background-color: #333}
+      .whatsapp {background-color: #25D366}
+      .facebook {background-color: #405DE6}
+ 
+      @media (min-width: 700px) and (max-width: 1250px) {
+         .bg_footer {
+            height: 20vh;
+         }
+         .circle_icon {
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            left: 0;
+            top: 50%;
+         }
+         .bg_footer h2 {
+            text-align: center;
+         }
+      }
+      @media (max-width: 700px) {
+         .circle_icon {
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+         }
+         .bg_footer h2 {
+            font-size: 18px;
+            margin: 3% 20%;
+         }
+      }
+      /* Footer */
